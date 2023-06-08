@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <script> configObj = {"text":"We're live on The START. This is your chance Jeffery to finally prove your competence. You cannot find a platform like this anywhere else! <br> Join The Fight, and I promise it will be rewarding.","bannerURL":"The START","selectedBackgroundColor":"#69C3FF","selectedTextColor":"#181818","bannerHeight":"64px","fontSize":"15px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });</script>
+<head>
+    <title>My Basic Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 class="title">The START</h1>
+    <p>This is a simple website created using HTML, CSS, and JavaScript.</p>
+    
+    <button id="myButton">
+        <img src="TRW.png" alt="Icon" class="tab-icon">
+        Click Me!</button>
+    <button id="discordButton" class="button">
+        <img src="discord.png" alt="Icon" class="tab-icon">
+        Join Discord
+    </button>
+    <button id="tiktokButton">
+        <img src="TikTok.png" alt="Icon" class="tab-icon">
+        Visit TikTok</button>
+
+    <divider></divider>
+
+    <div id="tabContainer">
+        <button id="tabButton1">Why Should <b>I Join?</b></button>
+        <button id="tabButton2">Who Am <b>I?</b></button>
+    </div>
+    
+    <div id="tabContent1" class="tabContent">
+        <h2>What's Inside?</h2>
+        <p>
+            You CANNOT find anything like this for the price it is, and for how revolutionary it is!
+            <br> 
+            You will find ways to make money in the real world. 
+            <br> These include:
+            <b> 
+                <br> - Full guide on content automation.
+                <br> - Copy and paste my content for money. 
+                <br> - Copy and paste other creators content for money on Tiktok or YouTube.
+            </b>
+            <br>
+            Do NOT Fuck This Up. We will turn you Into a absoulute G if you just join the server. 
+            <br>
+            <br>
+            ITS LITERALLY FUCKING FREE!
+
+            Just join.
+
+            You will also find a group of young men looking to improve their selves while playing the greatest machine to ever exist. 
+            <br> We have various options:
+            <b>
+                <br> - A literal fucking meditation area. 
+                <br> - A full guide on working out, plus full area for working out.
+                <br> - A full guide on how to become The Iron Mind.
+            </b>
+            <br> It is impossibleto lose. You don't have to pay any money for investment, plus I surround you with various ways on improving life. 
+    </p>
+    </div>
+    
+    <div id="tabContent2" class="tabContent">
+        <h2>Who Are You?</h2>
+        <p>I am TheIronMind.
+
+            <br> I have completely withtained control of my mind.
+            <br> I don't do that degenerate shit. 
+            <br> <b>NONE OF IT IS IN MY LIFE.</b>
+            <br> You cannot find someone who teaches you on how to control your mind like me. 
+            <br> I'm still in my fucking high school years, and I managed to explore my mind more than most adults dare to try.
+            <br> Of course I'm always looking for something to explore and new, as long as it has a good benefit at the end of it. 
+            <br> And i'm not talking about instant gradification Jeffery; no i'm talking <b>Delayed Gradification</b>.
+            <br> So let me recap my short summary of all the hard work i've done over the past 2 years, I control my mind, and <b>AM NOT A SLAVE</b>
+            For <b>I AM THEIRONMIND.</b>
+        </p>
+    </div>
+    <div id="iconContainer">
+        <img src="Swords.png" alt="Icon" id="iconImage">
+    </div>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="I Have Escaped The Matrix.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+</div>
+
+<div>
+    <textarea id="customText" rows="4" cols="50" placeholder="Enter your custom text here..."></textarea>
+    <button id="postButton">Post</button>
+  </div>
+  <div id="postedText"></div>
+
+
+    
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
